@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <!-- SEO -->
+    <meta name="keywords" content="INICIO DE SESION, lOG IN, CHECK IN.">
+    <meta name="description" content="Inicia sesion para comprobar las reservas realizadas">
+     <!-- ICONO -->
+     <link rel="icon" type="image/jpg" href='./assets/img/Hotel Lorem.png'>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href='../assets/css/style.css'>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body class="body_all">
+
+  <!-- HEADER -->
+
+
+  <header class="barraNavegable container-fluid body_all border border-dark sticky-top">
+    <!--Barra Navegable boostrap--> 
+    <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
+           <!-- La palabra 'Hotel Lorem desaparece en Desktop' -->
+         <a class="navbar-brand link-light d-lg-none" href="./index.html">Hotel Lorem</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav mx-auto">
+             <li class="mx-auto nav-item ">
+               <a class="nav-link active link-light" aria-current="Hotel Lorem" href="../index.html">Inicio</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./habitaciones.html">Habitaciones</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./reserva.html">Reserva</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./sobre_nosotros.html">Sobre Nosotros</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./clientes.html">Clientes</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+</header>
+
+
+<!-- Main -->
+
+
+   <main>
+    <!-- CARRUSEL DE BOOSTRAP -->
+    <Section class="sectionBordo section-cliente">
+      <form class="container pt-5 pb-5">
+        <h1 class="text-Blanco pb-5">Inicio de Sesion</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="text-light form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="text-light form-text">No compartiremos tu Emain con nadie.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="text-light form-label">Contrasena</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label text-light" for="exampleCheck1">Recordar Contrasena</label>
+        </div>
+        <button type="submit" class="btn btn_gris text-light">Ingresar</button>
+      </form>
+    </Section> 
+  </main>
+
+
+    <!-- Footer -->
+
+
+
+    <footer class="row justify-content-around col-12 mx-0 body_all pt-5 bt-dark-2px">
+      <div class="col-10 col-md-5 col-lg-2 footer__titulo d-none d-md-block d-lg-block">
+          <h4 class="text-light h1">Hotel Lorem</h4>
+      </div>
+      <div class="col-10 col-md-5 col-lg-2 footer_divs">
+          <h4 class="text-light h2">Soporte</h4>
+          <ul class="footer__lista p-0 m-0">
+              <li class="footer__lista-item">Terminos de servicio</li>
+              <li class="footer__lista-item">Condiciones de uso</li>
+              <li class="footer__lista-item">Politica de privacidad</li>
+              <li class="footer__lista-item">Centro de ayuda</li>
+              <li class="footer__lista-item">Status</li>
+          </ul>
+      </div>
+      <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Redes</h4>
+        <ul class="footer__lista  p-0 m-0">
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Instagram.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.instagram.com">Instagram</a></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Facebook.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.facebook.com">Facebook</a></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Twitter.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.twitter.com">Twitter </a></li>
+        </ul>
+      </div>
+      <div class="col-10 col-md-5 col-lg-2 footer_divs">
+          <h4 class="text-light h2">Compañia</h4>
+          <ul class="footer__lista  p-0 m-0">
+              <li class="footer__lista-item"><a class='linksfooter' href="../index.html">Inicio</a></li>
+              <li class="footer__lista-item"><a class='linksfooter' href="./habitaciones.html">Habitaciones</a></li>
+              <li class="footer__lista-item"><a class='linksfooter' href="./reserva.html">Reserva</a></li>
+              <li class="footer__lista-item"><a class='linksfooter' href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+              <li class="footer__lista-item"><a class='linksfooter' href="./clientes.html">Clientes</a></li>
+          </ul>
+      </div>
+    <!-- JAVA SCRIP BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <!-- SEO -->
+    <meta name="keywords" content="ALOJAMIENTO EN EL HOTEL LOREM, ALOJAMIENTO, RESERVA, RESERVA UNA HABITACION, RESERVA UN CUARTO, DORMI EN EL HOTEL LOREM">
+    <meta name="description" content="Consigue alojamiento en el lujoso Hotel Lorem que cuenta con precios increiblemente bajos">
+     <!-- ICONO -->
+     <link rel="icon" type="image/jpg" href='./assets/img/Hotel Lorem.png'>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href='../assets/css/style.css'>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body class="body_all">
+
+
+  <!-- HEADER -->
+
+
+  <header class="barraNavegable container-fluid body_all border border-dark sticky-top">
+    <!--Barra Navegable boostrap--> 
+    <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
+           <!-- La palabra 'Hotel Lorem desaparece en Desktop' -->
+         <a class="navbar-brand link-light d-lg-none" href="./index.html">Hotel Lorem</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav mx-auto">
+             <li class="mx-auto nav-item ">
+               <a class="nav-link active link-light" aria-current="Hotel Lorem" href="../index.html">Inicio</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./habitaciones.html">Habitaciones</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./reserva.html">Reserva</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./sobre_nosotros.html">Sobre Nosotros</a>
+             </li>
+             <li class="mx-auto nav-item">
+               <a class="nav-link link-light" href="./clientes.html">Clientes</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+</header>
+
+
+  <!-- MAIN -->
+
+
+  <main class="sectionBordo">
+    <h1 class="text-Blanco pt-5 mb-5">Reservar Ahora</h1>
+    <form class='container-fluid' action="Reserva">
+      <!-- Nombre y Apellido -->
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Last name">
+        </div>
+      </div>
+      <!-- Email y Telefono -->
+      <div class="row g-3">
+        <div class="col mt-5">
+          <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+        </div>
+        <div class="col mt-5">
+          <input type="text" class="form-control" placeholder="Telefono" aria-label="phone">
+        </div>
+      </div>
+      <!-- Seleccion de habitacion -->
+      <div class="form-floating mt-5">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option selected>Selecciona el tipo de Habitacion</option>
+          <option value="1">Doble Matrimonial Standard</option>
+          <option value="2">Doble Twin Standard</option>
+          <option value="3">Suite Matrimonial</option>
+          <option value="4">Suite Twin</option>
+        </select>
+      </div>
+      <!-- Fecha ingreso y egreso -->
+      <div class="row mb-3">
+        <label class='text-Blanco col mt-4' for="date">Fecha Ingreso</label>
+        <label class='text-Blanco col mt-4' for="date">Fecha Egreso</label>
+      </div>
+      
+      <div class="form-floating row">
+        <input class='col'type="date" name="fechaIn">
+        <input class='col' type="date" name="fechaIn">
+      </div>
+      <!-- Comentario Adicional -->
+      <div class="form-floating">
+        <textarea class="form-control mt-5" placeholder="Informacion adicional" style='height: 100px;' id="floatingTextarea"></textarea>
+        <label class='mx-auto' for="floatingTextarea">Informacion adicional</label>
+      </div>
+      <!-- Servicio adicionales -->
+      <div class="form-floating mt-4">
+        <div class="form-check">
+          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckdesayuno">
+          <label class="form-check-label mt-2 text-Blanco" for="flexCheckdesayuno">
+            Incluir desayuno
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckcable" checked>
+          <label class="form-check-label mt-2 text-Blanco" for="flexCheckcable">
+            Servicio de Cable
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckcochera" checked>
+          <label class="form-check-label mt-2 text-Blanco" for="flexCheckcochera">
+            Cochera
+          </label>
+        </div>  
+      </div>
+      <!-- Boton de Enviar -->
+      <input class='btn btn_gris-reserva text-light mt-5'type="submit" value="Enviar">
+    </form>
+  </main>
+
+<!-- FOOTER -->
+
+  <footer class="row justify-content-around col-12 mx-0 body_all bt-dark-2px">
+    <div class="col-10 col-md-5 col-lg-2 footer__titulo d-none d-md-block d-lg-block">
+        <h4 class="text-light h1">Hotel Lorem</h4>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Soporte</h4>
+        <ul class="footer__lista p-0 m-0">
+            <li class="footer__lista-item">Terminos de servicio</li>
+            <li class="footer__lista-item">Condiciones de uso</li>
+            <li class="footer__lista-item">Politica de privacidad</li>
+            <li class="footer__lista-item">Centro de ayuda</li>
+            <li class="footer__lista-item">Status</li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+      <h4 class="text-light h2">Redes</h4>
+      <ul class="footer__lista  p-0 m-0">
+          <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Instagram.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.instagram.com">Instagram</a></li>
+          <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Facebook.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.facebook.com">Facebook</a></li>
+          <li class="footer__lista-item"><IMG class='img-footer' SRC="../assets/img/Logo Twitter.png" ALIGN=MIDDLE><a class='linksfooter' href="https://www.twitter.com">Twitter </a></li>
+      </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+      <h4 class="text-light h2">Compañia</h4>
+      <ul class="footer__lista  p-0 m-0">
+          <li class="footer__lista-item"><a class='linksfooter' href="../index.html">Inicio</a></li>
+          <li class="footer__lista-item"><a class='linksfooter' href="./habitaciones.html">Habitaciones</a></li>
+          <li class="footer__lista-item"><a class='linksfooter' href="./reserva.html">Reserva</a></li>
+          <li class="footer__lista-item"><a class='linksfooter' href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li class="footer__lista-item"><a class='linksfooter' href="./clientes.html">Clientes</a></li>
+      </ul>
+  </div>
+    <!-- JAVA SCRIP BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</footer>
+  
+</body>
+</html>

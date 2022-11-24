@@ -1,0 +1,43 @@
+
+
+/* USAMOS LOS SASS DE CADA SECCION DE LA PAGINA */
+
+
+
+/* NAVBAR */
+@use './partials/_navbar.scss';
+
+
+/* PAGINAS */
+@use './partials/_index.scss';
+
+@use './partials/habitaciones';
+
+@use './partials/reserva';
+
+@use './partials/clientes';
+/* FOOTER */
+@use './partials/_footer.scss';
+
+/* ELEMENTOS EN COMUN */
+
+
+/* RESET GENERAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+/* TEXTO COLOR BLANCO CENTRADO*/
+.text-Blanco{
+    text-align: center;
+    color: #fff;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}

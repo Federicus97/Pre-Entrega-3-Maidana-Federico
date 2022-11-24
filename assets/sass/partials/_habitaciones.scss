@@ -1,0 +1,24 @@
+
+/* BOTONES DE RESERVA */
+.divdelbtn{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid black 2px;
+    .btn_gris{
+        background-color: #625B61;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        &:hover{
+            background-color: #70696f;
+        }
+    }
+    .btn_bordo{
+        background-color: #451D34;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        &:hover{
+            background-color: #50213b;
+        }
+    }
+}
+

@@ -1,0 +1,24 @@
+.btn_gris-reserva{
+    background-color: #625B61;
+    margin-bottom: 20px;
+    margin-left: 49vw;
+}
+
+/* CAMBIO DEL MARGEN DEL BOTON MOBILE  */
+@media screen and (min-width: 375px){
+    .btn_gris-reserva{
+        margin-left: 35vw;
+    }
+}
+/* CAMBIO DEL MARGEN DEL BOTON TABLET  */
+@media screen and (min-width: 768px){
+    .btn_gris-reserva{
+        margin-left: 42vw;
+    }
+}
+/* CAMBIO DEL MARGEN DEL BOTON DESKTOP  */
+@media screen and (min-width: 1024px){
+    .btn_gris-reserva{
+        margin-left: 47vw;
+    }
+}

@@ -1,0 +1,245 @@
+
+.row{
+    margin: 0%;
+    padding: 0%;
+}
+
+.sectionBordo{
+    background-color: #451D34;
+}
+
+.btn-bordo{
+    background-color: #451D34;
+}
+
+#sinp{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#section-2{
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+/* APLICANDO MIXIN */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 
+
+
+/* VIEW MOBILE */
+
+
+@media screen and (min-width: 375px){
+    .section-1{
+        padding: 0px;
+        align-items: center;
+    }
+    .article-div-1{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100wv;
+        padding-bottom: 20px;
+        div{
+            @include sizes(95.5vw,200px);
+            background-color: #625B61;
+        p{
+            font-size: medium;
+            margin-top: 20px;
+        }
+        button{
+            width: 100px;
+            margin-left: 32.5vw;
+            margin-top: 10px;
+            background-color: #451D34;
+            border-style: none;
+            &:hover{
+                background-color: #50213b;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            
+        }
+        }
+    }
+    .article-div-2{
+        padding-left: 0px;
+        padding-left: 0px;
+        img{
+            @include sizes(95.5vw,200px);
+        }
+    }
+
+
+ /*    Seccion de los beneficios */
+    #section-2{
+        article{
+            color: #625B61;
+    
+            div{
+                border-radius: 10px;
+                @include sizes(300px,350px);
+                background-color: #451D34;
+                margin-bottom: 50px;
+                div{
+                    img{
+    
+                        margin-left: 100px;
+                    }
+                    .img-revelde{
+                        margin-top: -30px;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+/* Seccion de Resena */
+
+    .article-resena{
+        background-color: #625B61;
+        
+        .div-resena{
+            background-color: #451D34;
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+    }
+    .img-section-2{
+        @include sizes(100px,100px);
+    }
+
+    .img-clientes{
+        border: solid black 2px;
+        @include sizes(200px,200px);
+        border-radius: 100px;
+    }
+       
+    
+/* ULTIMO BOTON DE index*/
+    .section-btn-last-index{
+        background-color: #625B61;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid black 2px;
+        #last-btn-index{
+            margin-bottom: 50px;
+            background-color: #451D34;
+            border-color: #451D34;
+            &:hover{
+                background-color: #50213c;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+
+/* VIEW TABLET */
+
+
+@media screen and (min-width: 768px){
+    .article-div-1{
+        div{
+            margin-left: 70px;
+            padding: 0px;
+            @include sizes(600px,200px);
+        p{
+            font-size: medium;
+            margin-top: 20px;
+        }
+        button{
+            margin-left: 32.5vw;
+        }
+        }
+    }
+    .article-div-2{
+        img{
+            @include sizes(97.5vw,400px);
+        }
+    }
+    #section-2{
+        article{
+            div{
+                @include sizes(300px,350px);
+                margin-bottom: 50px;
+                
+                div{
+                    img{
+                        margin-left: 100px;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    /* Seccion de Resena */
+
+
+    .article-resena{
+        justify-content: center;
+    }
+    .img-section-2{
+        @include sizes(100px,100px);
+    }
+
+    .img-clientes{
+        @include sizes(200px,200px);
+    }
+}
+
+
+
+/* VISTA DESKTOP */
+
+
+@media screen and (min-width: 1024px){
+
+    .article-div-1{
+        width: 100vw;
+        padding-left: 15vw;
+        div{
+            width: 60vw;
+            p{
+                font-size: large;
+            }
+            button{
+                width: 200px;
+                margin-left: 25vw;
+            }
+        }
+    }
+
+    .article-div-2{
+        img{
+            @include sizes(99.1vw,600px);
+        }
+    }
+
+/* Seccion de Resena */
+
+    .article-resena{
+        .div-resena{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+

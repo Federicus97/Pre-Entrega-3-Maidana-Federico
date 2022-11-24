@@ -1,0 +1,10 @@
+.section-cliente{
+    form{
+        .btn_gris{
+            background-color: #625B61;
+            &:hover{
+                background-color: #70686f;
+            }
+        }
+    }
+}

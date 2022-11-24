@@ -1,0 +1,14 @@
+
+/* COLOR DE HEADER GRIS */
+.body_all{
+    background-color: #625B61;
+}
+
+@media screen and (min-width: 1000px){
+    .nav-link{
+        &:hover{
+            font-size: larger;
+            color: #fff;
+        }
+    }
+}
